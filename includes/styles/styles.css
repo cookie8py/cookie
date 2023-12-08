@@ -33,14 +33,18 @@ p {
 	padding: .25em 3em;
 	border: 1px solid #999;
 }
-/* #Main{
-	position: absolute;
-	left: 70%;
-	top: 5%;
-} */
 
 @media (max-width: 667px){
 	h1{font-size: 1.5em;}
 	p{font-size: 1.25em;}
+
+}
+
+@media (max-width: 375px){
+	#Main {
+		position: absolute;
+		left:50%;
+		transform: translate(-50%);
+	}
 
 }
