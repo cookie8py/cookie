@@ -35,17 +35,17 @@ p {
 }
 
 @media (max-width: 667px){
-	h1{font-size: 1.5em;}
-	p{font-size: 1.25em;}
-
+	#Main{left:60%}
+	h1{font-size: 2em;}
+	p{font-size: 1.5em;}
 }
 
 @media (max-width: 375px){
-	h1{font-size: 1.5em;}
-	p{font-size: 1.25em;}
 	#Main {
 		position: absolute;
 		left:50%;
 		transform: translate(-50%);
 	}
+	h1{font-size: 2.5em;}
+	p{font-size: 2em;}
 }
