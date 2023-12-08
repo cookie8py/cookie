@@ -1,5 +1,3 @@
-/* NanumGothic-Regular.ttf */
-/* NanumPenScript-Regular.ttf */
 @font-face {
 	font-family: 'NanumGothic';
 	src: url("./fonts/Nanum_Gothic/NanumGothic-Regular.ttf");
@@ -11,9 +9,7 @@
 
 
 html, body{height: 100%; width: 100%;} /* Important for background height...*/
-body{
-	/* font: normal 14px "Open Sans Regular","Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";  */
-				   
+body{			   
 	font: normal 14px "NanumPenScript", Helvetica, Arial, "sans-serif"; 
 	color: #333;
     background-image: url(../images/bkgrd.jpg);
@@ -22,13 +18,28 @@ body{
 }
 
 h1{
-	font: normal 36px "NanumGothic", Helvetica, Arial, "sans-serif"; 
+	font: normal 3em "NanumGothic", Helvetica, Arial, "sans-serif"; 
 }
 p {
-	font: normal 28px "NanumPenScript", Helvetica, Arial, "sans-serif"; 
+	font: normal 2.5em "NanumPenScript", Helvetica, Arial, "sans-serif"; 
+	width: 8em;
 }
-#Main{
+#Main {
 	position: absolute;
 	left: 70%;
 	top: 5%;
+	background-color: #fff;
+	padding: .25em 3em;
+	border: 1px solid #999;
+}
+/* #Main{
+	position: absolute;
+	left: 70%;
+	top: 5%;
+} */
+
+@media (max-width: 667px){
+	h1{font-size: 1.5em;}
+	p{font-size: 1.25em;}
+
 }
