@@ -41,10 +41,11 @@ p {
 }
 
 @media (max-width: 375px){
+	h1{font-size: 1.5em;}
+	p{font-size: 1.25em;}
 	#Main {
 		position: absolute;
 		left:50%;
 		transform: translate(-50%);
 	}
-
 }
