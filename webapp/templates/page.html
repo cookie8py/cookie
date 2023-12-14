@@ -1,0 +1,62 @@
+<html> <!--<html 요소, 페이지 전체의 콘텐츠를 감쌉니다. root 요소>-->
+    <head> <!-- head 요소. 콘텐츠가 아닌, 모든 재료들을 위한 컨테이너-->
+        <meta charset="utf-8" /> <!--문자 집합의 설정, 후일 발생할 문제 방지-->
+        <link rel="stylesheet" href="/static/style.css" />
+        <!--css를 html문서에 적용합니다.-->
+        <title>right triangles calculator page</title> <!-- <title> 요소, 제목이자 북마크 설명-->
+        <!---->
+    </head>
+<body>
+    <title>right triangles calculator page</title>    
+    <h1>About {{ name }}˚📐</h1></body></p>
+    <p>The reference angle is {{ name }}˚ <span class="emoji">🤔</span><br>Enter the length of the side</p>
+        <!-- Client에서 Server로 보낼 정보를 담을 가방 -->
+        <form method="GET" action="/calculate"><!--사용자 입력 받기-->
+            <!--action: form의 정보들이 도착하는 목적지-->
+            <!--참조한 원본-->
+            <!--<div>
+                <label for="char1"> 표시할 문자 </label>
+                <input type="text" name="char1">
+            </div>
+            <div>
+                <label for="num"> 몇 번 </label>
+                <input type="text" name="num">
+            </div>
+            <div class='button'>
+                <button type="submit">숫자만큼 별 표시하기</button>
+            </div>-->
+            <div>
+                <label for="num">Enter the length of the side here</label>
+                <input type="text" name="num">
+            </div>
+            <div class="button">
+                <button type="submit">Enter</button>
+            </div>
+            <div><!-- 길이 입력받는 곳 -->
+                
+                {% if num == None %}
+                    <h5><p> Please Enter the length of the side </p></h5>
+                {% else %}
+                    <h5><p> The length of the side you entered is {{ num }}. </br>
+                    Enter the number of the location of the side.</p></h5>
+                {% endif %}
+                
+            </div>
+            
+            <div class="button">
+                <button type="submit">Base</button>
+                <h5><p> Base : {{ num }} </p></h5>
+            </div>
+            <div class="button">
+                <button type="submit">Hypotenuse</button>
+                <h5><p> Hypotenuse : {{ num }} </p></h5>
+            </div>
+            <div class="button">
+                <button type="submit">Height</button>
+                <h5><p> Height : {{ num }} </p></h5>
+            </div>
+
+            <p>The base is " + str(base) + ", \n The height is " + str(height) + " and \n The hypotenuse is " + str(hypotenuse)</p>
+        </form>
+</body>
+</html>
