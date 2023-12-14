@@ -21,7 +21,7 @@ def calculate(num=None):
 	if request.method == 'POST':
 		# temp = request.form['num']
 		pass
-		return render_template('page.html', name=name)
+		
 	elif request.method == 'GET':
 		## 넘겨받은 숫자
 		temp = request.args.get('num')
@@ -29,7 +29,27 @@ def calculate(num=None):
 		## 넘겨받은 문자
 		# temp1 = request.args.get('char1')
 		## 넘겨받은 값을 원래 페이지로 리다이렉트
-		return render_template('page.html', num=temp) # , char1=temp1)
+		return render_template('page.html', num1=temp) # , char1=temp1)
+	## else 로 하지 않은 것은 POST, GET 이외에 다른 method로 넘어왔을 때를 구분하기 위함
+
+	elif request.method == 'GET':
+		## 넘겨받은 숫자
+		temp = request.args.get('num')
+		temp = int(temp)
+		## 넘겨받은 문자
+		# temp1 = request.args.get('char1')
+		## 넘겨받은 값을 원래 페이지로 리다이렉트
+		return render_template('page.html', num2=temp) # , char1=temp1)
+	## else 로 하지 않은 것은 POST, GET 이외에 다른 method로 넘어왔을 때를 구분하기 위함
+
+	elif request.method == 'GET':
+		## 넘겨받은 숫자
+		temp = request.args.get('num')
+		temp = int(temp)
+		## 넘겨받은 문자
+		# temp1 = request.args.get('char1')
+		## 넘겨받은 값을 원래 페이지로 리다이렉트
+		return render_template('page.html', num3=temp) # , char1=temp1)
 	## else 로 하지 않은 것은 POST, GET 이외에 다른 method로 넘어왔을 때를 구분하기 위함
 
 if __name__=='__main__':
