@@ -1,0 +1,64 @@
+<!doctype html> <!--필수 서문-->
+<html> <!--<html 요소, 페이지 전체의 콘텐츠를 감쌉니다. root 요소>-->
+  <head> <!-- head 요소. 콘텐츠가 아닌, 모든 재료들을 위한 컨테이너-->
+    <meta charset="utf-8" /> <!--문자 집합의 설정, 후일 발생할 문제 방지-->
+    <!--<meta name="viewport" content="width=device-width">
+    뷰 포트 요소, en-US는 뷰포트의 너비에서 페이지가 렌더링,
+    모바일 브라우저가 뷰포트보다 넓은 페이지를 렌더링 후 축소하는 것을 방지-->
+    <link rel="stylesheet" href="/static/style.css" />
+    <!--css를 html문서에 적용합니다.-->
+    <!--<link
+     href="http://fonts.googleapis.com/css?family=Open+Sans"
+     rel="stylesheet"
+     type="text/css" />--><!--글꼴을 적용하는 요소-->
+    <title>right triangles calculator page</title> <!-- <title> 요소, 제목이자 북마크 설명-->
+    <h1>Tri Pillar of Destiny</h1> <!--제목 요소들-->
+    <h2> : The calculator</h2> <!--제목 요소들-->
+  </head>
+  <body><!--<body> 요소, 보여주고 싶은 모든 컨텐츠 담는 곳-->
+    <!--<picture>
+      <img src="images/firefox-icon.png" alt="basic img, I will change it later" />
+      <source srcset="/cat-vertical.jpg" >
+        media="(orientation: portrait)" >
+      <sorce srcset="/cat-horizontal.jpg">
+        media="(orientation: landscape)"
+        <img src="/cat-default.jpg">
+        <source srcset="large.jpg" media="(min-width: 800px)" > 화면 크기에 따라 다른 이미지 표시
+        <source srcset="mediup.jpg" media="(min-width: 500px)" > 화면 크기에 따라 다른 이미지 표시
+        <img src="small.jpg">
+        <source srcset="dark-cat.jpg" media="(prefers-color-scheme: dark)" > 다크모드와 라이트모드 지원 이미지 소스
+        <img src="light-cat.jpg"> 
+        <source srcset="high-definition.jpg" media="(min-resolution: 2dppx)" >
+        <img src="low-definition.jpg"> 화면 해상도에 따라 이미지 로드
+        <source srcset="tall.jpg" media="(min-height: 800px)">
+        <source srcset="short.jpg" media="(max-height:799px)">
+        <img src="default.jpg"> 화면 높이에 따라 다른 이미지 로드
+        아래 5줄은 기기의 화면 방향과 너비에 따라 다른 이미지를 로드
+        <sorce srcset="large-portrait.jpg" media="(orientation: portrait) and (min-width:800px)">
+        <sorce srcset="small-landscape.jpg" media="(orientation: portrait) and (max-width:799px)">
+        <sorce srcset="large-portrait.jpg" media="(orientation:landscape ) and (min-width:800px)">
+        <sorce srcset="small-landscape.jpg" media="(orientation:landscape ) and (max-width:799px)">
+        <img src="default.jpg" >
+        아래 4줄은 파일 형식에 따라 다른 이미지 로드
+        <source srcset="cat.jxl" type="image/jxl">
+        <source srcset="cat.webp" type="image/webp">
+        <source srcset="cat.avif" type="image/avif">
+        <img src="cat.jpg">
+    </picture>-->
+    <!--이미지가 나타날 위치에 이미지를 끼워넣습니다. src:속성이라는 뜻-->
+    <!--alt:이미지에 대한 주석, 접근성을 배제하지 않도록 노력필수.-->
+    <!--<picture><source/><source/><img/></picture> 요소 안에 여러 개의 소스 요소를 넣을 수 있습니다.-->
+    <p>Do you need help?<span class="emoji">🤔</span>I will calculate the lengths of the sides for you!!</p>
+    <!--문단의 요소를 포함합니다.-->
+    <p>Please click on one of the reference angles.</p>
+        <ol> <!--순서가 있는 목록--><!--순서가 없는 `ul도 있습니다.-->
+          <span><li><a href="/enter/30">30˚</a></li></span> <!--각 목록을 감싸는 요소-->
+          <span><li><a href="/enter/45">45˚</a></li></span>
+          <span><li><a href="/enter/60">60˚</a></li></span>
+        </ol>
+    <p><a href="https://www.notion.so/Main-project-2a43b00ca07c4b48ae99d87e09191e4f">What is "The reference angle?"<span class="emoji">🧐</span>
+    </a></p>
+    <!--<a>내용</a>은 웹을 웹으로 연결. 속성의 값에 연결할 웹 주소를 채웁니다.-->
+    <!--href는 hypertext reference의 약자로 하이퍼 텍스트를 말합니다.-->
+  </body>
+</html>

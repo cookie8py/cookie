@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url("./fonts/OpenSans-Regular.ttf")
+}
+
+html {
+    background-color: black;
+} /*전체 페이지의 배경 색*/
+body {
+    width:600px;
+    margin: 0 auto;
+    background-color: blue;
+    padding: 0 20px 20px 20px;
+    border: 5px solid greenyellow;
+    font: normal 14px "Open Sans Regular", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"; 
+}
+/*
+width:600px; <- body가 600px의 너비를 갖도록 강제
+margin: 0 auto; <- margin 혹은 padding 처럼 한 속성에 2개의 값을 설정할 시,
+1번째 값은 요소의 상단과 하단
+2번째 값은 좌우
+auto는 수평공간의 왼쪽과 오른쪽을 같게 나누는 특별한 값
+하나에서 네개까지도 값을 사용할 수 있습니다.
+padding: 0 20px 20px 20px; padidng에는 컨텐츠 주위에 약간의 공간을 주기 위한 값 존재
+12시부터 시계방향
+boder:5px solid black; body 모든 면의 border를 5px 실선으로 설정 
+*/
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: greenyellow;
+    text-shadow: 3px 3px 1px hotpink;
+} /*브라우저의 초기 스타일링 초기화 후 padding 을 20px, 색 적용*/
+/*
+text-shadow 은 문자의 그림자, 4개 값 존재
+1번째:수평오프셋
+2번째:수직오프셋
+3번째:흐림반경
+4번째:그림자의 기본 색상
+*/
+
+h2 {
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    font-size: 60px;
+    text-align: center; /*위치를 가운데로*/
+} /*제목에 대한 스타일을 설정합니다.*/
+
+p,
+ol,
+button { /*여러 요소를 선택하여 rule set 적용*/
+    text-align: center;
+    color: greenyellow;
+    width: auto;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    border: 1px solid greenyellow; 
+} 
+
+li { /*여러 요소를 선택하여 rule set 적용*/
+    text-align: match-parent;
+    color: greenyellow;
+    width: auto;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    border: 1px solid greenyellow; 
+} 
+
+a { /*여러 요소를 선택하여 rule set 적용*/
+    text-align: center;
+    color: greenyellow;
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px; 
+    padding: 1px;
+} 
+/*
+padding:컨텐츠 주위의 공간, 
+border:padding 바깥쪽 실선, 
+margin:요소 바깥쪽 공간
+*/
+
+/*
+width: 한 요소의 너비
+background-color: 요소의 컨텐츠와 padding 배경 색
+color: 한 요소의 컨텐츠 색(일반적으로, 글자)
+text-shadow: 한 요소 안의 글자에 그림자를 적용
+display: 요소의 표시 형식 설정 
+*/
+
+/*
+글꼴을 설정하는 rule
+html {
+  font-size: 10px; 
+  font-family: placeholder:
+  px 은 'pixels' 를 의미합니다: 기본 글자 크기는 현재 10 pixels 높이입니다.
+  구글 폰트로부터 여러분이 얻은 마지막 결과가 있어야합니다.
+}
+*/
+img {
+    color: greenyellow;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+.emoji {
+  font-family: 'Noto Color Emoji', sans-serif;
+  font-size: auto; /* 이모지 크기 조절 */
+  color: DodgerBlue; /* 이모지 색상 조절 */
+  margin-right: 10px; /* 이모지와 텍스트 사이 여백 조절 */
+}
+/*이미지를 가운데 정렬하려면? 
+body 요소는 block level 입니다.
+margin과 여기에 적용된 여백값을 가질 수 있습니다.
+반면 이미지는 inline 요소 입니다.
+이미지에 margin 을 적용하기 위해선,
+display: block; 을 사용하여 이미지에 block-level 성질을 부여합니다.*/
+form {
+    margin: 0 auto;
+    width: auto;
+    border: 1px solid greenyellow
+}
+form div + div {
+    /* div 사이에 여백 추가 */
+    margin-top: 1em;
+}
+label {
+    display : block;
+    /* width : fit-content; */
+    text-align : fit-content;
+    color: pink;
+}
+/* .buttonDiv {
+    margin-left: .5em;
+} */
+.buttonDiv button {
+    display:block;
+    width: 100%;
+    background-color: blue;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+input{ width:100%;}

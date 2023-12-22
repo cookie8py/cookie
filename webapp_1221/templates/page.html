@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>right triangles calculator page</title>
+</head>
+<body>
+    {% if num %}
+        <h1>About {{ name }}˚📐</h1>
+        <p>The reference angle is {{ name }}˚ <span class="emoji">🤔</span>
+        <br>The length of the side is {{ num }}</p>
+
+        <form method="GET" action="/getPosition">
+            <div class="buttonDiv">
+                <button type="submit" value="Base">Base</button>
+                <button type="submit" value="Height">Height</button>
+                <button type="submit" value="hypotenuse">Hypotenuse</button>
+            </div>
+        </form>
+
+    {% else %}
+        <h1>About {{ name }}˚📐</h1>
+        <p>The reference angle is {{ name }}˚ <span class="emoji">🤔</span>
+        <br>Enter the length of the side</p>
+        
+        <form method="GET" action="/sideLength">
+            <div>
+                <label for="num">Enter the length of the side here</label>
+                <input type="text" name="num">
+            </div>
+            <div class="buttonDiv">
+                <button type="submit">Enter</button>
+            </div>
+        </form>
+    {% endif %}
+</body>
+</html>
